@@ -613,7 +613,8 @@ _next_match:
                 *token += ML_MASK;
                 matchCode -= ML_MASK;
                 LZ4_write32(op, 0xFFFFFFFF);
-                while (matchCode >= 4*255) op+=4, LZ4_write32(op, 0xFFFFFFFF), matchCode -= 4*255;
+                while (matchCode >= 4*255) (void)(op+=4), (void)(LZ4_write32(op, 0xFFFFFFFF)), matchCode -= 4*255;
+//              while (matchCode >= 4*255) op+=4, LZ4_write32(op, 0xFFFFFFFF), matchCode -= 4*255;
                 op += matchCode / 255;
                 *op++ = (BYTE)(matchCode % 255);
             } else
@@ -716,7 +717,8 @@ int LZ4_compress_default(const char* source, char* dest, int inputSize, int maxO
 
 /* hidden debug function */
 /* strangely enough, gcc generates faster code when this function is uncommented, even if unused */
-int LZ4_compress_fast_force(const char* source, char* dest, int inputSize, int maxOutputSize, int acceleration)
+//int LZ4_compress_fast_force(const char* source, char* dest, int inputSize, int maxOutputSize, int acceleration)
+static int LZ4_compress_fast_force(const char* source, char* dest, int inputSize, int maxOutputSize, int acceleration)
 {
     LZ4_stream_t ctx;
     LZ4_resetStream(&ctx);

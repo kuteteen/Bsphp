@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -75,7 +75,6 @@
 		194F3C4C218328300070F5BC /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 194F3C1E218328300070F5BC /* AFHTTPSessionManager.h */; };
 		194F3C4E21832AA80070F5BC /* defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 194F3C4D21832AA80070F5BC /* defines.h */; };
 		194F3C5021832B7A0070F5BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194F3C4F21832B7A0070F5BC /* SystemConfiguration.framework */; };
-		194F3C5221832B860070F5BC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194F3C5121832B860070F5BC /* MobileCoreServices.framework */; };
 		466776CF23803D5900B3D43E /* mem_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 466776C423803D5800B3D43E /* mem_utils.h */; };
 		466776D023803D5900B3D43E /* search_result.h in Headers */ = {isa = PBXBuildFile; fileRef = 466776C523803D5800B3D43E /* search_result.h */; };
 		466776D123803D5900B3D43E /* search_result_def.h in Headers */ = {isa = PBXBuildFile; fileRef = 466776C623803D5800B3D43E /* search_result_def.h */; };
@@ -117,6 +116,8 @@
 		EA08516525DD737000C980AF /* LtShengMing.h in Headers */ = {isa = PBXBuildFile; fileRef = EA08515F25DD737000C980AF /* LtShengMing.h */; };
 		EA08516625DD737000C980AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08516025DD737000C980AF /* main.m */; };
 		EA8B22F525CA53B50001EC5C /* UIViewController+Alert.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8B22F425CA53B50001EC5C /* UIViewController+Alert.h */; };
+		EAA5A64525E4134100F8B4B3 /* LtConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA5A64425E4134100F8B4B3 /* LtConfig.h */; };
+		EAA5A64625E42CE600F8B4B3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194F3C5121832B860070F5BC /* MobileCoreServices.framework */; platformFilter = ios; };
 		EAB0268E25CC606300897866 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB0268D25CC606200897866 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +236,7 @@
 		EA08515F25DD737000C980AF /* LtShengMing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LtShengMing.h; sourceTree = "<group>"; };
 		EA08516025DD737000C980AF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../LuntanYZ/main.m; sourceTree = "<group>"; };
 		EA8B22F425CA53B50001EC5C /* UIViewController+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Alert.h"; path = "HackMenu/Category/UIViewController+Alert.h"; sourceTree = SOURCE_ROOT; };
+		EAA5A64425E4134100F8B4B3 /* LtConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LtConfig.h; sourceTree = "<group>"; };
 		EAB0268D25CC606200897866 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -246,8 +248,8 @@
 				8A1ADA3F228D9C1500DF45DD /* CFNetwork.framework in Frameworks */,
 				8A1ADA3D228D9BF200DF45DD /* libc++.tbd in Frameworks */,
 				8A1ADA3B228D9BD900DF45DD /* libc.tbd in Frameworks */,
+				EAA5A64625E42CE600F8B4B3 /* MobileCoreServices.framework in Frameworks */,
 				187BE2862270D52200033424 /* Metal.framework in Frameworks */,
-				194F3C5221832B860070F5BC /* MobileCoreServices.framework in Frameworks */,
 				EAB0268E25CC606300897866 /* QuartzCore.framework in Frameworks */,
 				194F3C5021832B7A0070F5BC /* SystemConfiguration.framework in Frameworks */,
 				194F3B3D218327B10070F5BC /* Foundation.framework in Frameworks */,
@@ -529,8 +531,8 @@
 		EA08515925DD737000C980AF /* Bsphp */ = {
 			isa = PBXGroup;
 			children = (
-				EA08515A25DD737000C980AF /* Gongneng.h */,
 				EA08515B25DD737000C980AF /* Config.h */,
+				EA08515A25DD737000C980AF /* Gongneng.h */,
 				EA08515C25DD737000C980AF /* Gongneng.m */,
 			);
 			path = Bsphp;
@@ -541,6 +543,7 @@
 			children = (
 				EA08515E25DD737000C980AF /* LtGongNeng.m */,
 				EA08515F25DD737000C980AF /* LtShengMing.h */,
+				EAA5A64425E4134100F8B4B3 /* LtConfig.h */,
 			);
 			path = LuntanYZ;
 			sourceTree = SOURCE_ROOT;
@@ -590,6 +593,7 @@
 				194F3B8E218327BE0070F5BC /* DLGMemUIView.h in Headers */,
 				194F3BBC218328210070F5BC /* UserInfoManager.h in Headers */,
 				8A440B8E229D2181001BEECD /* SCLMacros.h in Headers */,
+				EAA5A64525E4134100F8B4B3 /* LtConfig.h in Headers */,
 				194F3BE92183282C0070F5BC /* UIView+Toast.h in Headers */,
 				8A1ADB37229061DC00DF45DD /* GTMDefines.h in Headers */,
 				EA08516125DD737000C980AF /* Gongneng.h in Headers */,
@@ -633,7 +637,7 @@
 		194F3B30218327B10070F5BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1170;
 				TargetAttributes = {
 					194F3B38218327B10070F5BC = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -646,6 +650,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 194F3B2F218327B10070F5BC;
 			productRefGroup = 194F3B3A218327B10070F5BC /* Products */;
@@ -732,17 +737,40 @@
 		194F3B4A218327B10070F5BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(MonkeyDevPath)/frameworks/**",
 					"$(MonkeyDevTheosPath)/vendor/lib",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -759,8 +787,27 @@
 		194F3B4B218327B10070F5BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(MonkeyDevPath)/frameworks/**",
@@ -768,14 +815,19 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

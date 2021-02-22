@@ -7,8 +7,8 @@
 //
 
 #include "mem_utils.h"
-
-void *search_uint8(const void *b, size_t len, uint8_t v, int comparison) {
+//void *search_uint8(const void *b, size_t len, uint8_t v, int comparison)
+static void *search_uint8(const void *b, size_t len, uint8_t v, int comparison) {
     size_t vlen = sizeof(uint8_t);
     char *sp = (char *)b;
     char *eos = sp + len - vlen;
@@ -30,7 +30,7 @@ void *search_uint8(const void *b, size_t len, uint8_t v, int comparison) {
     return NULL;
 }
 
-void *search_int8(const void *b, size_t len, int8_t v, int comparison) {
+static void *search_int8(const void *b, size_t len, int8_t v, int comparison) {
     size_t vlen = sizeof(int8_t);
     char *sp = (char *)b;
     char *eos = sp + len - vlen;
@@ -52,7 +52,7 @@ void *search_int8(const void *b, size_t len, int8_t v, int comparison) {
     return NULL;
 }
 
-void *search_uint16(const void *b, size_t len, uint16_t v, int comparison) {
+static void *search_uint16(const void *b, size_t len, uint16_t v, int comparison) {
     size_t vlen = sizeof(uint16_t);
     char *sp = (char *)b;
     char *eos = sp + len - vlen;
@@ -74,7 +74,7 @@ void *search_uint16(const void *b, size_t len, uint16_t v, int comparison) {
     return NULL;
 }
 
-void *search_int16(const void *b, size_t len, int16_t v, int comparison) {
+static void *search_int16(const void *b, size_t len, int16_t v, int comparison) {
     size_t vlen = sizeof(int16_t);
     char *sp = (char *)b;
     char *eos   = sp + len - vlen;
@@ -96,7 +96,7 @@ void *search_int16(const void *b, size_t len, int16_t v, int comparison) {
     return NULL;
 }
 
-void *search_uint32(const void *b, size_t len, uint32_t v, int comparison) {
+static void *search_uint32(const void *b, size_t len, uint32_t v, int comparison) {
     size_t vlen = sizeof(uint32_t);
     char *sp = (char *)b;
     char *eos = sp + len - vlen;
@@ -118,7 +118,7 @@ void *search_uint32(const void *b, size_t len, uint32_t v, int comparison) {
     return NULL;
 }
 
-void *search_int32(const void *b, size_t len, int32_t v, int comparison) {
+static void *search_int32(const void *b, size_t len, int32_t v, int comparison) {
     size_t vlen = sizeof(int32_t);
     char *sp = (char *)b;
     char *eos   = sp + len - vlen;
@@ -140,7 +140,7 @@ void *search_int32(const void *b, size_t len, int32_t v, int comparison) {
     return NULL;
 }
 
-void *search_uint64(const void *b, size_t len, uint64_t v, int comparison) {
+static void *search_uint64(const void *b, size_t len, uint64_t v, int comparison) {
     size_t vlen = sizeof(uint64_t);
     char *sp = (char *)b;
     char *eos = sp + len - vlen;
@@ -162,7 +162,7 @@ void *search_uint64(const void *b, size_t len, uint64_t v, int comparison) {
     return NULL;
 }
 
-void *search_int64(const void *b, size_t len, int64_t v, int comparison) {
+static void *search_int64(const void *b, size_t len, int64_t v, int comparison) {
     size_t vlen = sizeof(int64_t);
     char *sp = (char *)b;
     char *eos   = sp + len - vlen;
@@ -184,7 +184,7 @@ void *search_int64(const void *b, size_t len, int64_t v, int comparison) {
     return NULL;
 }
 
-void *search_float(const void *b, size_t len, float v, int comparison) {
+static void *search_float(const void *b, size_t len, float v, int comparison) {
     size_t vlen = sizeof(float);
     char *sp = (char *)b;
     char *eos = sp + len - vlen;
@@ -206,7 +206,7 @@ void *search_float(const void *b, size_t len, float v, int comparison) {
     return NULL;
 }
 
-void *search_double(const void *b, size_t len, double v, int comparison) {
+static void *search_double(const void *b, size_t len, double v, int comparison) {
     size_t vlen = sizeof(double);
     char *sp = (char *)b;
     char *eos   = sp + len - vlen;

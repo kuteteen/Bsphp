@@ -16,8 +16,8 @@
 + (instancetype)MySharedInstance;
 
 - (NSString*)getIDFA;
-- (void)DLGMemorAir:(NSString *)code finish:(void (^)(NSDictionary *done))finish;
+
 - (void)showAlertMsg:(NSString *)show error:(BOOL)error;
-- (void)MacDLGMemor;
+
 
 @end

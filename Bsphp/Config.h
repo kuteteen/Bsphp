@@ -1,7 +1,3 @@
-
-// 十三哥 QQ350722326
-//官网 https://iosgods.cn
-
 #import <Foundation/Foundation.h>
 //全局配置BSPHP
 //下面信息通过软件后台>软件>对应软件设置上获得
@@ -18,7 +14,7 @@
 //远程菜单
 //QQ飞飞车pqrGPtGQWD46tXNw0D/F5T0AhXHudnKfH0VQ5tMgsyU9MEjXAMKKCA==
 //王者pqrGPtGQWD46tXNw0D/F5T0AhXHudnKfx8SpJ05NV2xi+eupx7CFnO1JTJeqmJOY
-#define LD_URL @"pqrGPtGQWD46tXNw0D/F5T0AhXHudnKfH0VQ5tMgsyU9MEjXAMKKCA=="
+#define LD_URL @"pqrGPtGQWD46tXNw0D/F5T0AhXHudnKfx8SpJ05NV2xi+eupx7CFnO1JTJeqmJOY"
 //签名in进认证
 #define LD_IN @"Qyrxke2qEaC59N/oeuSajQ=="
 //签名to本地认证

@@ -85,7 +85,7 @@
     
     
     
-    NSLog(@"------v:%016llx ----------",v);
+   
     //g_task = macj_task_self
     //size = sizeof(uint32_t);
     //address = realaddress = address + _dyld_get_image_vmaddr_slide(0);

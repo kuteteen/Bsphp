@@ -18,6 +18,7 @@
 - (BOOL)zhuche;
 - (BOOL)goumai;
 - (BOOL)dingshi;
+- (BOOL)huoqukey;
 
 
 
