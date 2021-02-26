@@ -1,11 +1,3 @@
-//
-//  mem.c
-//  mem
-//
-//  Created by Liu Junqi on 3/23/18.
-//  Copyright © 2018 DeviLeo. All rights reserved.
-//
-
 #include "mem.h"
 #include "mem_utils.h"
 #include <time.h>

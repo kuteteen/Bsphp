@@ -18,15 +18,14 @@
 #import "Config.h"
 #import "DES3Utill.h"
 #import "UIAlertView+Blocks.h"
-
 #import <Foundation/Foundation.h>
 #import "SCLAlertView.h"
 #import "Gongneng.h"
 @interface VerifyEntry ()<UIAlertViewDelegate>
 
 @end
+#pragma mark BSPHP功能
 @implementation VerifyEntry
-
 
 + (instancetype)MySharedInstance
 {
@@ -43,7 +42,6 @@
     
     return sharedSingleton;
 }
-
 
 - (NSString*)getIDFA
 {
@@ -214,11 +212,10 @@
 }
 
 @end
+#pragma mark  BS验证流程
 @implementation NSObject (hook)
 - (BOOL)Bsphp
 {
-           
-    
     NSString * strmutualkey = NULL;
     strmutualkey  = [DES3Utill decrypt:LD_KEY gkey:LD_AAAA];
     NSString * strhost = NULL;
@@ -332,6 +329,7 @@
                                           });
                        }
                    });
+    return 0;
 }
 //检测是否开启了VPN否则终止进程
 - (BOOL)Banben321{
@@ -518,7 +516,7 @@
     else
     {
         exit(0);
-        NSLog(@"检测到代理");
+        
         return YES;
     }
 }

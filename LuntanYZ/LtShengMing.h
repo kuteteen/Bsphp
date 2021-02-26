@@ -19,7 +19,7 @@
 - (BOOL)goumai;
 - (BOOL)dingshi;
 - (BOOL)huoqukey;
-
+- (BOOL)test;
 
 
 @end
